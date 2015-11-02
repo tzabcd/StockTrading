@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://Stock_Trading_UserWealth.Em/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://Stock_Trading_UserWealth.Em/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://Stock_Trading_UserWealth.Em/">
+      <s:element name="MapUserWealth">
+        <s:complexType />
+      </s:element>
+      <s:element name="MapUserWealthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MapUserWealthResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefreshData">
+        <s:complexType />
+      </s:element>
+      <s:element name="RefreshDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RefreshDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="areaId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MapUserWealthSoapIn">
+    <wsdl:part name="parameters" element="tns:MapUserWealth" />
+  </wsdl:message>
+  <wsdl:message name="MapUserWealthSoapOut">
+    <wsdl:part name="parameters" element="tns:MapUserWealthResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefreshDataSoapIn">
+    <wsdl:part name="parameters" element="tns:RefreshData" />
+  </wsdl:message>
+  <wsdl:message name="RefreshDataSoapOut">
+    <wsdl:part name="parameters" element="tns:RefreshDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewUser" />
+  </wsdl:message>
+  <wsdl:message name="AddNewUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StockTradingUserWealthSoap">
+    <wsdl:operation name="MapUserWealth">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">用户昨日资金 &lt;br&gt; 返回类型为   DataSet &lt;br&gt; 出错则返回空DataSet </wsdl:documentation>
+      <wsdl:input message="tns:MapUserWealthSoapIn" />
+      <wsdl:output message="tns:MapUserWealthSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">手动更新 &lt;br&gt; 返回类型为   bool </wsdl:documentation>
+      <wsdl:input message="tns:RefreshDataSoapIn" />
+      <wsdl:output message="tns:RefreshDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">注册添加排名用户 &lt;br&gt; 返回类型为   bool </wsdl:documentation>
+      <wsdl:input message="tns:AddNewUserSoapIn" />
+      <wsdl:output message="tns:AddNewUserSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StockTradingUserWealthSoap" type="tns:StockTradingUserWealthSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MapUserWealth">
+      <soap:operation soapAction="http://Stock_Trading_UserWealth.Em/MapUserWealth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshData">
+      <soap:operation soapAction="http://Stock_Trading_UserWealth.Em/RefreshData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUser">
+      <soap:operation soapAction="http://Stock_Trading_UserWealth.Em/AddNewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StockTradingUserWealthSoap12" type="tns:StockTradingUserWealthSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MapUserWealth">
+      <soap12:operation soapAction="http://Stock_Trading_UserWealth.Em/MapUserWealth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshData">
+      <soap12:operation soapAction="http://Stock_Trading_UserWealth.Em/RefreshData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewUser">
+      <soap12:operation soapAction="http://Stock_Trading_UserWealth.Em/AddNewUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StockTradingUserWealth">
+    <wsdl:port name="StockTradingUserWealthSoap" binding="tns:StockTradingUserWealthSoap">
+      <soap:address location="http://testwealth.eastmoney.com/MainService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StockTradingUserWealthSoap12" binding="tns:StockTradingUserWealthSoap12">
+      <soap12:address location="http://testwealth.eastmoney.com/MainService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

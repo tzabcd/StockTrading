@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Stock_Trading_Simulator_Kernel.StkBuffer">
+    <Position X="2" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQgEAAAAAQRAAhAEAAAAQABAIggAAAAgAAABQGAg=</HashCode>
+      <FileName>Buffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.RemotingInterface">
+    <Position X="4" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Configuration" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Order" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_AllOrders" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Currency" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Status" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Market" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_FundChanges" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Result" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Fund" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Trading" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.RemotingInterface.RI_Stock" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAABAIBAAAaCAkCAABBAAAAAAAAhAAE2A=</HashCode>
+      <FileName>Interface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Common">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IIBABMYQIgEAMYANoACgAACAEAgsEDACAFABuLgARAg=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Management">
+    <Position X="0.5" Y="13.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAQAAAKAAAAAAAAAAAgAAAAAAAAAAAkAAAAQAAAAA=</HashCode>
+      <FileName>Management.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Quotation">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgACAAAAggAAQAAAAAAAAYABAAACAQIEAAAAABAAAg=</HashCode>
+      <FileName>Quotation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.ClientIPServerSinkProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="18.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAABAAAIAAAgAAAAAAAAAIAAAA=</HashCode>
+      <FileName>RemotingProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.ClientIPServerSink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="17.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAEIAAEAAAgAAAgAAAAAAA=</HashCode>
+      <FileName>RemotingProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Synchronizer">
+    <Position X="8.25" Y="0.5" Width="2" />
+    <NestedTypes>
+      <Enum Name="Stock_Trading_Simulator_Kernel.Synchronizer.Special_OrderID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Synchronizer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="Stock_Trading_Simulator_Kernel.Synchronizer.TradingHistory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Synchronizer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.Synchronizer.TradingError" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Synchronizer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.Synchronizer.FundHistory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Synchronizer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.Synchronizer.UserWealth" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Synchronizer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IKQQAwQAYEBAAQI0AQJCREAMWEBAxAAAAIAEAFACAIg=</HashCode>
+      <FileName>Synchronizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.TradingSystem">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Stock_Trading_Simulator_Kernel.TradingSystem.OrderType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Stock_Trading_Simulator_Kernel.TradingSystem.OrderStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Stock_Trading_Simulator_Kernel.TradingSystem.StockMarket" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Stock_Trading_Simulator_Kernel.TradingSystem.StockType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Stock_Trading_Simulator_Kernel.TradingSystem.Currency" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="Stock_Trading_Simulator_Kernel.TradingSystem.UserFund" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.TradingSystem.UserOrders" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="Stock_Trading_Simulator_Kernel.TradingSystem.UserStocks" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TradingSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>SBEYAJUTAEIAAQIABAFgQAAWAAACAIAAAAABAA5nAAo=</HashCode>
+      <FileName>TradingSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="20.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAgAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Result_Notifer.RemotingRespond" Collapsed="true">
+    <Position X="0.5" Y="18" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AACAAAQAACAAIAAAIAFSgAIAQACBABAACAAAASBAAAE=</HashCode>
+      <FileName>Web References\Result_Notifer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Result_Notifer.UserOrders_HandledCompletedEventArgs" Collapsed="true">
+    <Position X="6.25" Y="17.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\Result_Notifer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.Result_Notifer.Ranks_HandledCompletedEventArgs" Collapsed="true">
+    <Position X="0.5" Y="18.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\Result_Notifer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.RI_UserWealth.Service1" Collapsed="true">
+    <Position X="0.5" Y="19.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAABIAQAACAAAABAAAAAgAAAAAAAAAAACgAAAAAABAE=</HashCode>
+      <FileName>Web References\RI_UserWealth\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stock_Trading_Simulator_Kernel.RI_UserWealth.MapUserWealthCompletedEventArgs" Collapsed="true">
+    <Position X="0.5" Y="17.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\RI_UserWealth\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="Stock_Trading_Simulator_Kernel.Result_Notifer.UserOrders_HandledCompletedEventHandler" Collapsed="true">
+    <Position X="6.25" Y="19.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\Result_Notifer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Stock_Trading_Simulator_Kernel.Result_Notifer.Ranks_HandledCompletedEventHandler" Collapsed="true">
+    <Position X="6.25" Y="18.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Web References\Result_Notifer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Stock_Trading_Simulator_Kernel.Result_Notifer.ClearCompletedEventHandler" Collapsed="true">
+    <Position X="6.25" Y="20.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Web References\Result_Notifer\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Stock_Trading_Simulator_Kernel.RI_UserWealth.MapUserWealthCompletedEventHandler" Collapsed="true">
+    <Position X="6.25" Y="18" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\RI_UserWealth\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

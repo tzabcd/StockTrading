@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://jypost.eastmoney.com/Services/RI_SyncNotify.asmx?wsdl" docRef="http://jypost.eastmoney.com/Services/RI_SyncNotify.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://jypost.eastmoney.com/Services/RI_SyncNotify.asmx" xmlns:q1="http://tempuri.org/" binding="q1:RI_SyncNotifySoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://jypost.eastmoney.com/Services/RI_SyncNotify.asmx" xmlns:q2="http://tempuri.org/" binding="q2:RI_SyncNotifySoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
