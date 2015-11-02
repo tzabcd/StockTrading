@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock Trading UserRank Kernel", "Stock Trading UserRank Kernel\Stock Trading UserRank Kernel.csproj", "{32FCEC02-D050-45B5-A6D2-54C0F5F62F1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock Trading UserRank Shell", "..\Stock Trading UserRank Shell\Stock Trading UserRank Shell.csproj", "{7C3A2B91-9942-4597-9E02-C38C51580E07}"
+EndProject
+Project("{4F174C21-8C12-11D0-8340-0000F80270F8}") = "Stock Trading DataBaseScript", "..\Stock Trading DataBaseScript\Stock Trading DataBaseScript.dbp", "{4E11333F-B3E9-4333-A164-F10F8C451170}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32FCEC02-D050-45B5-A6D2-54C0F5F62F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32FCEC02-D050-45B5-A6D2-54C0F5F62F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32FCEC02-D050-45B5-A6D2-54C0F5F62F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32FCEC02-D050-45B5-A6D2-54C0F5F62F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3A2B91-9942-4597-9E02-C38C51580E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3A2B91-9942-4597-9E02-C38C51580E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3A2B91-9942-4597-9E02-C38C51580E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3A2B91-9942-4597-9E02-C38C51580E07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

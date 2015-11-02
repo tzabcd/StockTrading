@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UserOrders_Handled">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="playID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="result" type="s:unsignedByte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserOrders_HandledResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserOrders_HandledResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ranks_Handled">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="playID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Ranks_HandledResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Ranks_HandledResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Clear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="playID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RemoveAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="playID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveAllResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UserOrders_HandledSoapIn">
+    <wsdl:part name="parameters" element="tns:UserOrders_Handled" />
+  </wsdl:message>
+  <wsdl:message name="UserOrders_HandledSoapOut">
+    <wsdl:part name="parameters" element="tns:UserOrders_HandledResponse" />
+  </wsdl:message>
+  <wsdl:message name="Ranks_HandledSoapIn">
+    <wsdl:part name="parameters" element="tns:Ranks_Handled" />
+  </wsdl:message>
+  <wsdl:message name="Ranks_HandledSoapOut">
+    <wsdl:part name="parameters" element="tns:Ranks_HandledResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearSoapIn">
+    <wsdl:part name="parameters" element="tns:Clear" />
+  </wsdl:message>
+  <wsdl:message name="ClearSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveAll" />
+  </wsdl:message>
+  <wsdl:message name="RemoveAllSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveAllResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RemotingRespondSoap">
+    <wsdl:operation name="UserOrders_Handled">
+      <wsdl:input message="tns:UserOrders_HandledSoapIn" />
+      <wsdl:output message="tns:UserOrders_HandledSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Ranks_Handled">
+      <wsdl:input message="tns:Ranks_HandledSoapIn" />
+      <wsdl:output message="tns:Ranks_HandledSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Clear">
+      <wsdl:input message="tns:ClearSoapIn" />
+      <wsdl:output message="tns:ClearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAll">
+      <wsdl:input message="tns:RemoveAllSoapIn" />
+      <wsdl:output message="tns:RemoveAllSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RemotingRespondSoap" type="tns:RemotingRespondSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserOrders_Handled">
+      <soap:operation soapAction="http://tempuri.org/UserOrders_Handled" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ranks_Handled">
+      <soap:operation soapAction="http://tempuri.org/Ranks_Handled" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Clear">
+      <soap:operation soapAction="http://tempuri.org/Clear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAll">
+      <soap:operation soapAction="http://tempuri.org/RemoveAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RemotingRespondSoap12" type="tns:RemotingRespondSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserOrders_Handled">
+      <soap12:operation soapAction="http://tempuri.org/UserOrders_Handled" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Ranks_Handled">
+      <soap12:operation soapAction="http://tempuri.org/Ranks_Handled" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Clear">
+      <soap12:operation soapAction="http://tempuri.org/Clear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveAll">
+      <soap12:operation soapAction="http://tempuri.org/RemoveAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RemotingRespond">
+    <wsdl:port name="RemotingRespondSoap" binding="tns:RemotingRespondSoap">
+      <soap:address location="http://jypost.eastmoney.com/Services/RemotingRespond.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RemotingRespondSoap12" binding="tns:RemotingRespondSoap12">
+      <soap12:address location="http://jypost.eastmoney.com/Services/RemotingRespond.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

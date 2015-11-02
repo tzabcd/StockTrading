@@ -1,0 +1,16 @@
+# Microsoft Developer Studio 项目文件 -- 数据库项目
+Begin DataProject = "Stock Trading DataBaseScript"
+   MSDTVersion = "80"
+   Begin Folder = "Change Scripts"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "EMTradePlay.sql"
+      Script = "EMTradeRank2.sql"
+      Script = "Job_Backup_EMTradePlay.sql"
+      Script = "Job_Backup_EMTradeRank2.sql"
+   End
+   Begin DBRefFolder = "Database References"
+   End
+   Begin Folder = "Queries"
+   End
+End

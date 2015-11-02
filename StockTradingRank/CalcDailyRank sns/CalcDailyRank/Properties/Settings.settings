@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CalcDailyRank.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CalcDailyRank_ccpostWS_RemotingRespond" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ccpost.eastmoney.com/Services/RemotingRespond.asmx</Value>
+    </Setting>
+    <Setting Name="CalcDailyRank_AcquireStockExRights_AcquireStockExRights" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://222.73.55.134/em_data2/Services/AcquireStockExRights.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

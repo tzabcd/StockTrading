@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Play>
+    <PlayId>2</PlayId><!--活动ID-->
+    <GameId>1</GameId><!--比赛ID-->
+    <AreaIds>4,5,6</AreaIds><!--区域ID列表-->
+    <ConnStr>data source=localhost;user id=emtradeplay;password=eastmoney201;Initial Catalog=emtraderank2;</ConnStr><!--排行数据库连接字符-->
+    <DBFSHPath>D:\EastMoney\dbf\show2003.dbf</DBFSHPath><!--上证行情DBF文件路径-->
+    <DBFSZPath>D:\EastMoney\dbf\sjshq.dbf</DBFSZPath><!--深证行情DBF文件路径-->
+    <RateUSD>6.831</RateUSD><!--美元汇率-->
+    <RateHKD>0.881</RateHKD><!--港币汇率-->
+    <InitCashRMB>1000000</InitCashRMB><!--人民币初始资金-->
+    <InitCashUSD>0</InitCashUSD><!--美元初始资金-->
+    <InitCashHKD>0</InitCashHKD><!--港币初始资金-->
+    <RunTimeHour>16</RunTimeHour>
+    <rmtUserKey>L0ca1</rmtUserKey>
+  <RatioBaseLine>0.49</RatioBaseLine><!--持仓合格标准-->
+  <RatioCheckDay>2009-09-07</RatioCheckDay><!--持仓检查开始日期-->
+    <RankNotifySrv>http://jypost.eastmoney.com/Services/RemotingRespond.asmx</RankNotifySrv>
+    <NotifySrv>
+        <Add key="0" DataBaseChar="A" ri="tcp://192.168.1.52:12502/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="1" DataBaseChar="B" ri="tcp://192.168.1.53:12502/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="2" DataBaseChar="C" ri="tcp://192.168.1.54:12502/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="3" DataBaseChar="D" ri="tcp://192.168.1.55:12502/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="4" DataBaseChar="E" ri="tcp://192.168.1.56:12502/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="5" DataBaseChar="F" ri="tcp://192.168.1.57:12502/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="6" DataBaseChar="G" ri="tcp://192.168.1.58:12502/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    </NotifySrv>
+    <Holiday><!--假日列表-->
+        <Add key="2009-05-01" validity="true" /> <!--五一-->
+        <Add key="2009-05-02" validity="true" />
+        <Add key="2009-05-03" validity="true" />
+        
+        <Add key="2009-05-28" validity="true" /> <!--端午-->
+        <Add key="2009-05-29" validity="true" />
+        <Add key="2009-05-30" validity="true" />
+        
+        <Add key="2009-10-01" validity="true" /> <!--国庆-->
+        <Add key="2009-10-02" validity="true" />
+        <Add key="2009-10-03" validity="true" />
+        <Add key="2009-10-04" validity="true" />
+        <Add key="2009-10-05" validity="true" />
+        <Add key="2009-10-06" validity="true" />
+        <Add key="2009-10-07" validity="true" />
+        <Add key="2009-10-08" validity="true" />
+    </Holiday>
+</Play>

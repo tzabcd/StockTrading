@@ -1,0 +1,8 @@
+<publishData>
+  <publishTarget publishUrl="d:\publish\RatioRank\">
+    <file relUrl="bin/CalcDurationRatioRank.pdb" publishTime="10/09/2009 14:40:39" />
+    <file relUrl="bin/CalcDurationRatioRank.dll" publishTime="10/09/2009 14:40:39" />
+    <file relUrl="RatioRank.asmx" publishTime="10/09/2009 11:27:52" />
+    <file relUrl="Web.config" publishTime="10/09/2009 11:18:29" />
+  </publishTarget>
+</publishData>

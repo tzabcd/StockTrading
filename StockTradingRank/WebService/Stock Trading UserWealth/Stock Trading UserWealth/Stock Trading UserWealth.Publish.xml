@@ -1,0 +1,10 @@
+<publishData>
+  <publishTarget publishUrl="d:\testproject\ws\">
+    <file relUrl="Global.asax" publishTime="02/18/2009 14:24:43" />
+    <file relUrl="Web.config" publishTime="09/23/2009 17:37:04" />
+    <file relUrl="bin/Stock Trading UserWealth.dll" publishTime="09/23/2009 17:45:09" />
+    <file relUrl="process.ico" publishTime="02/19/2009 10:33:01" />
+    <file relUrl="MainService.asmx" publishTime="02/18/2009 15:33:25" />
+    <file relUrl="bin/Stock Trading UserWealth.pdb" publishTime="09/23/2009 17:45:09" />
+  </publishTarget>
+</publishData>

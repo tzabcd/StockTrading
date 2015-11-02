@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Play>
+    <PlayId>3</PlayId><!--活动ID-->
+    <GameId>1</GameId><!--比赛ID-->
+    <AreaIds>7</AreaIds><!--区域ID列表-->
+    <ConnPlay>data source=localhost;user id=emtradeplay;password=eastmoney201;Initial Catalog=emtradeplay;</ConnPlay>
+    <ConnRank>data source=localhost;user id=emtradeplay;password=eastmoney201;Initial Catalog=emtraderank3;</ConnRank>
+    <DBFSHPath>D:\EastMoney\dbf\show2003.dbf</DBFSHPath><!--上证行情DBF文件路径-->
+    <DBFSZPath>D:\EastMoney\dbf\sjshq.dbf</DBFSZPath><!--深证行情DBF文件路径-->
+    <RateUSD>6.831</RateUSD><!--美元汇率-->
+    <RateHKD>0.881</RateHKD><!--港币汇率-->
+    <InitCashRMB>1000000</InitCashRMB><!--人民币初始资金-->
+    <InitCashUSD>0</InitCashUSD><!--美元初始资金-->
+    <InitCashHKD>0</InitCashHKD><!--港币初始资金-->
+    <RankDate></RankDate>
+    <RankTime>15:15:00</RankTime>
+  <WeeklyProfitFlag>1</WeeklyProfitFlag><!--周收益计算标志(0:固定每周末计算/1:每天针对上周末计算)-->
+  <MonthlyProfitFlag>0</MonthlyProfitFlag><!--月收益计算标志(0:固定每周末计算/1:每天针对上月末计算)-->
+    <rmtUserKey>L0ca1</rmtUserKey>
+  <RatioBaseLine>0.49</RatioBaseLine><!--持仓合格标准-->
+  <RatioCheckDay>2</RatioCheckDay><!--持仓检查天次-->
+    <RankNotifySrv>http://192.168.4.87:8000/Services/RemotingRespond.asmx</RankNotifySrv>
+    <NotifySrv>
+        <Add key="0" DataBaseChar="A" ri="tcp://192.168.1.52:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="1" DataBaseChar="B" ri="tcp://192.168.1.53:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="2" DataBaseChar="C" ri="tcp://192.168.1.54:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="3" DataBaseChar="D" ri="tcp://192.168.1.55:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="4" DataBaseChar="E" ri="tcp://192.168.1.56:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="5" DataBaseChar="F" ri="tcp://192.168.1.57:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="6" DataBaseChar="G" ri="tcp://192.168.1.58:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="7" DataBaseChar="H" ri="tcp://192.168.1.196:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="8" DataBaseChar="I" ri="tcp://192.168.1.197:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="9" DataBaseChar="J" ri="tcp://192.168.1.198:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+        <Add key="10" DataBaseChar="K" ri="tcp://192.168.1.199:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    </NotifySrv>
+    <Holiday><!--假日列表-->
+        <Add key="2009-05-01" /> <!--五一-->
+        <Add key="2009-05-02" />
+        <Add key="2009-05-03" />
+        
+        <Add key="2009-05-28" /> <!--端午-->
+        <Add key="2009-05-29" />
+        <Add key="2009-05-30" />
+        
+        <Add key="2009-10-01" /> <!--国庆-->
+        <Add key="2009-10-02" />
+        <Add key="2009-10-03" />
+        <Add key="2009-10-04" />
+        <Add key="2009-10-05" />
+        <Add key="2009-10-06" />
+        <Add key="2009-10-07" />
+        <Add key="2009-10-08" /><!--中秋-->
+    </Holiday>
+</Play>

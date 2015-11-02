@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="StockExRights">
+        <s:complexType />
+      </s:element>
+      <s:element name="StockExRightsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockExRightsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StockAllotments">
+        <s:complexType />
+      </s:element>
+      <s:element name="StockAllotmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StockAllotmentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="StockExRightsSoapIn">
+    <wsdl:part name="parameters" element="tns:StockExRights" />
+  </wsdl:message>
+  <wsdl:message name="StockExRightsSoapOut">
+    <wsdl:part name="parameters" element="tns:StockExRightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="StockAllotmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:StockAllotments" />
+  </wsdl:message>
+  <wsdl:message name="StockAllotmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:StockAllotmentsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AcquireStockExRightsSoap">
+    <wsdl:operation name="StockExRights">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">分红送股信息</wsdl:documentation>
+      <wsdl:input message="tns:StockExRightsSoapIn" />
+      <wsdl:output message="tns:StockExRightsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StockAllotments">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">配股信息</wsdl:documentation>
+      <wsdl:input message="tns:StockAllotmentsSoapIn" />
+      <wsdl:output message="tns:StockAllotmentsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AcquireStockExRightsSoap" type="tns:AcquireStockExRightsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="StockExRights">
+      <soap:operation soapAction="http://tempuri.org/StockExRights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockAllotments">
+      <soap:operation soapAction="http://tempuri.org/StockAllotments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AcquireStockExRightsSoap12" type="tns:AcquireStockExRightsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="StockExRights">
+      <soap12:operation soapAction="http://tempuri.org/StockExRights" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StockAllotments">
+      <soap12:operation soapAction="http://tempuri.org/StockAllotments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AcquireStockExRights">
+    <wsdl:port name="AcquireStockExRightsSoap" binding="tns:AcquireStockExRightsSoap">
+      <soap:address location="http://222.73.55.134/em_data2/Services/AcquireStockExRights.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AcquireStockExRightsSoap12" binding="tns:AcquireStockExRightsSoap12">
+      <soap12:address location="http://222.73.55.134/em_data2/Services/AcquireStockExRights.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="MainService.asmx.cs" Class="Stock_Trading_UserWealth.StockTradingUserWealth" %>
