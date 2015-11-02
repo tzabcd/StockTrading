@@ -1,0 +1,13 @@
+<publishData>
+  <publishTarget publishUrl="d:\publish\UserRegisterWebTest\">
+    <file relUrl="bin/RegKrn.dll" publishTime="07/22/2010 14:42:34" />
+    <file relUrl="bin/Stock Trading UserRegister WebClient.pdb" publishTime="07/22/2010 15:03:46" />
+    <file relUrl="bin/Stock Trading UserRegister WebClient.dll" publishTime="07/22/2010 15:03:46" />
+    <file relUrl="Web.config" publishTime="03/02/2010 17:16:54" />
+    <file relUrl="UserRegister.aspx" publishTime="02/19/2009 14:14:56" />
+    <file relUrl="bin/SimKrn.dll" publishTime="02/20/2009 10:17:19" />
+    <file relUrl="bin/RegKrn.pdb" publishTime="07/22/2010 14:42:34" />
+    <file relUrl="bin/StockIndexTrader.RemotingProvider.dll" publishTime="07/13/2010 11:03:25" />
+    <file relUrl="bin/NSCore.dll" publishTime="01/13/2009 20:03:56" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RegSetting>
+  <PlayId>3</PlayId>
+  <ConnStr>data source=192.168.1.61;user id=emtradeplay;password=eastmoney201;Initial Catalog=emtradeplay;</ConnStr>
+  <!--排行数据库连接字符-->
+  <rmtAdminKey>@!pH@2^!@8</rmtAdminKey>
+  <CurrentRmtServerKey>0</CurrentRmtServerKey>
+  <RmtNumber>7</RmtNumber>
+  <AllowReg>0</AllowReg>
+  <NotifySrv>
+    <Add key="0" PlayId="3" DataBaseChar="A" ri="tcp://192.168.1.52:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    <Add key="1" PlayId="3" DataBaseChar="B" ri="tcp://192.168.1.53:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    <Add key="2" PlayId="3" DataBaseChar="C" ri="tcp://192.168.1.54:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    <Add key="3" PlayId="3" DataBaseChar="D" ri="tcp://192.168.1.55:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    <Add key="4" PlayId="3" DataBaseChar="E" ri="tcp://192.168.1.56:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    <Add key="5" PlayId="3" DataBaseChar="F" ri="tcp://192.168.1.57:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+    <Add key="6" PlayId="3" DataBaseChar="G" ri="tcp://192.168.1.58:12503/Stock_Trading_Simulator_Kernel.RemotingInterface" />
+  </NotifySrv>
+</RegSetting>
